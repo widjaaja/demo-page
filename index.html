@@ -48,7 +48,10 @@
   </head>
   <body>
     <div class="flex overflow-x-hidden bg-[#fafbfc]">
-      <nav class="px-2 shadow shadow-[0_10px_25px_-10px_rgba(0,0,0,0.3)]">
+      <!-- Navbar -->
+      <nav
+        class="hidden md:block px-2 shadow shadow-[0_10px_25px_-10px_rgba(0,0,0,0.3)]"
+      >
         <div class="text-lg flex flex-col gap-5 py-2 text-sm">
           <div class="flex items-center gap-5 border-b-[1px] px-3 py-2">
             <i data-feather="grid" class="rounded-lg text-sky-500 w-5 h-5"></i>
@@ -96,16 +99,19 @@
           </div>
         </div>
       </nav>
+      <!-- End Navbar -->
+
       <aside>
+        <!-- Header -->
         <header
-          class="bg-gradient-to-r from-sky-400 to-indigo-600 text-white flex gap-5 bg-[url('./asset/image/headerBg.png')] font-primary py-3 h-44 px-5 w-[85vw]"
+          class="w-full md:h-38 bg-gradient-to-r from-sky-400 to-indigo-600 text-white flex gap-5 bg-[url('./asset/image/headerBg.png')] font-primary py-3 h-24 md:h-44 px-5 w-[85vw]"
         >
-          <div class="pt-10">
+          <div class="md:pt-10">
             <div
               class="bottom-[-7em] left-0 h-50 bg-white rounded-full flex justify-center items-center p-2"
             >
               <div
-                class="bg-[#CDEBFA] w-44 h-44 rounded-full flex justify-center items-center"
+                class="bg-[#CDEBFA] md:w-44 md:h-44 w-24 h-24 rounded-full flex justify-center items-center"
               >
                 <img
                   src="./asset/image/imageLogo.png"
@@ -119,10 +125,10 @@
           <div class="flex flex-col gap-5 w-full">
             <div class="flex justify-between">
               <div>
-                <p class="font-bold text-3xl leading-10">
+                <p class="font-bold text-lg md:text-3xl leading-10">
                   Beyul Pvt Limited edit
                 </p>
-                <p class="text-[12px]">
+                <p class="text-xs break-words md:text-sm w-44">
                   Waste management was never this easy edit 2
                 </p>
               </div>
@@ -149,7 +155,9 @@
                 </div>
               </div>
             </div>
-            <div class="flex w-[100%]">
+            <div
+              class="grid grid-cols-2 md:flex w-full text-black md:text-white"
+            >
               <div class="flex flex-row justify-center gap-2 w-96 px-3">
                 <div>
                   <i data-feather="home" class="w-4 h-4"></i>
@@ -196,10 +204,14 @@
             </div>
           </div>
         </header>
+        <!-- End Header -->
+
+        <!--Section main-->
         <main class="mt-32 px-5">
-          <section class="flex gap-5 text-xs">
-            <section class="w-[70%] flex flex-col gap-12">
-              <article class="flex flex-col gap-3">
+          <!-- section 1 -->
+          <section class="grid md:grid-cols-2 gap-5 text-xs">
+            <section class="w-96 md:w-full flex flex-col gap-12">
+              <article class="w-full flex flex-col gap-3 px-2">
                 <h2 class="text-2xl font-bold">Beyul Pvt Limited edit</h2>
                 <h4>A short summary about Beyul Pvt Limited edit</h4>
                 <p>
@@ -215,7 +227,7 @@
                   like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
               </article>
-              <article class="flex gap-5">
+              <article class="flex gap-5 flex-col md:flex-row">
                 <div
                   class="flex flex-col gap-3 shadow shadow-[0_5px_25px_-10px_rgba(0,0,0,0.3)] p-5 rounded-lg"
                 >
@@ -255,7 +267,7 @@
               </article>
             </section>
             <section
-              class="w-[30%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)]"
+              class="w-96 shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)]"
             >
               <div class="">
                 <div
@@ -341,16 +353,21 @@
               </div>
             </section>
           </section>
+          <!-- end section -->
+
+          <!-- our service -->
           <section class="py-14">
-            <section class="flex flex-col justify-center items-center gap-5">
-              <div class="flex flex-col justify-center items-center">
+            <section
+              class="w-96 md:w-full flex flex-col justify-center items-center gap-5"
+            >
+              <div class="w-full flex flex-col justify-center items-center">
                 <h2 class="text-xl font-bold">Our Services</h2>
-                <h4 class="text-sm">
+                <h4 class="text-sm text-center">
                   Listings of waste/buyproducts and recycled products Beyul Pvt
                   Limited edit buys.
                 </h4>
               </div>
-              <div class="flex gap-2">
+              <div class="flex gap-2 overflow-x-scroll w-96 md:w-9/12">
                 <div
                   class="border-l-2 border-blue-400 pl-2 py-2 rounded-full flex"
                 >
@@ -477,6 +494,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="flex gap-3">
                 <div
                   class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
@@ -491,205 +509,217 @@
               </div>
             </section>
           </section>
-          <section class="px flex flex-col gap-10 items-center">
-            <div class="flex flex-col justify-center items-center gap-5">
-              <h2 class="text-xl font-bold">Buyer Listings</h2>
-              <h4 class="text-sm">
-                Listings of waste/buyproducts and recycled products Beyul Pvt
-                Limited edit buys.
-              </h4>
-            </div>
-            <div class="flex gap-3 justify-between mb-40">
-              <div class="relative w-[24%]">
-                <div>
-                  <img src="./asset/image/buyer1.png" alt="" />
+          <!-- end our service -->
+
+          <!-- buyer listings -->
+          <section class="">
+            <section class="flex flex-col gap-10 items-center">
+              <section class="w-96 md:w-full">
+                <div class="flex-col justify-center items-center gap-5">
+                  <h2 class="text-xl font-bold text-center">Buyer Listings</h2>
+                  <h4 class="text-sm text-center">
+                    Listings of waste/buyproducts and recycled products Beyul
+                    Pvt Limited edit buys.
+                  </h4>
                 </div>
-                <div
-                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
-                >
-                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
-                  <h2 class="font-bold py-3 text-md">PET Plastic</h2>
-                  <div class="text-xs flex flex-col gap-3">
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i
-                          class="fa-solid fa-envelope text-xs text-blue-400"
-                        ></i>
+              </section>
+
+              <div class="flex gap-3 justify-between mb-72 md:mb-40">
+                <div class="relative w-[24%]">
+                  <div>
+                    <img src="./asset/image/buyer1.png" alt="" />
+                  </div>
+                  <div
+                    class="absolute h-82 md:h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  >
+                    <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                    <h2 class="font-bold py-3 text-md">PET Plastic</h2>
+                    <div class="text-xs flex flex-col gap-3">
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i
+                            class="fa-solid fa-envelope text-xs text-blue-400"
+                          ></i>
+                        </div>
+                        <p>info@mywastesolution.com</p>
                       </div>
-                      <p>info@mywastesolution.com</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                        </div>
+                        <p>9999241423</p>
                       </div>
-                      <p>9999241423</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        </div>
+                        <p>Greater Noida, Uttar Pradesh, India</p>
                       </div>
-                      <p>Greater Noida, Uttar Pradesh, India</p>
+                      <button
+                        class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                      >
+                        View Details
+                      </button>
                     </div>
-                    <button
-                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
-                    >
-                      View Details
-                    </button>
+                  </div>
+                </div>
+                <div class="relative w-[24%]">
+                  <div>
+                    <img src="./asset/image/buy2.png" alt="" />
+                  </div>
+                  <div
+                    class="absolute h-82 md:h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  >
+                    <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                    <h2 class="font-bold py-3 text-md">hdpe Plastic Edit</h2>
+                    <div class="text-xs flex flex-col gap-3">
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i
+                            class="fa-solid fa-envelope text-xs text-blue-400"
+                          ></i>
+                        </div>
+                        <p>info@mywastesolution.com</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                        </div>
+                        <p>9999241423</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        </div>
+                        <p>Achhnera, Uttar Pradesh, India</p>
+                      </div>
+                      <button
+                        class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative w-[24%]">
+                  <div>
+                    <img src="./asset/image/buy3.png" alt="" />
+                  </div>
+                  <div
+                    class="absolute h-82 md:h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  >
+                    <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                    <h2 class="font-bold py-3 text-md">LDPE</h2>
+                    <div class="text-xs flex flex-col gap-3">
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i
+                            class="fa-solid fa-envelope text-xs text-blue-400"
+                          ></i>
+                        </div>
+                        <p>info@mywastesolution.com</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                        </div>
+                        <p>9999241423</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        </div>
+                        <p>Greater Noida, Uttar Pradesh, India</p>
+                      </div>
+                      <button
+                        class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative w-[24%]">
+                  <div>
+                    <img src="./asset/image/buy4.png" alt="" />
+                  </div>
+                  <div
+                    class="absolute h-82 md:h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  >
+                    <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                    <h2 class="font-bold py-3 text-md">Copper Scrap</h2>
+                    <div class="text-xs flex flex-col gap-3">
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i
+                            class="fa-solid fa-envelope text-xs text-blue-400"
+                          ></i>
+                        </div>
+                        <p>info@mywastesolution.com</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                        </div>
+                        <p>9999241423</p>
+                      </div>
+                      <div class="flex gap-3 items-center">
+                        <div
+                          class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                        >
+                          <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        </div>
+                        <p>Abbeyleix, Leinster, Ireland</p>
+                      </div>
+                      <button
+                        class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                      >
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="relative w-[24%]">
-                <div>
-                  <img src="./asset/image/buy2.png" alt="" />
+
+              <div class="w-full flex gap-3 items-center">
+                <div
+                  class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
                 </div>
                 <div
-                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
                 >
-                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
-                  <h2 class="font-bold py-3 text-md">hdpe Plastic Edit</h2>
-                  <div class="text-xs flex flex-col gap-3">
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i
-                          class="fa-solid fa-envelope text-xs text-blue-400"
-                        ></i>
-                      </div>
-                      <p>info@mywastesolution.com</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
-                      </div>
-                      <p>9999241423</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-location-dot text-blue-400"></i>
-                      </div>
-                      <p>Achhnera, Uttar Pradesh, India</p>
-                    </div>
-                    <button
-                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
-                    >
-                      View Details
-                    </button>
-                  </div>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </div>
-              <div class="relative w-[24%]">
-                <div>
-                  <img src="./asset/image/buy3.png" alt="" />
-                </div>
-                <div
-                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
-                >
-                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
-                  <h2 class="font-bold py-3 text-md">LDPE</h2>
-                  <div class="text-xs flex flex-col gap-3">
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i
-                          class="fa-solid fa-envelope text-xs text-blue-400"
-                        ></i>
-                      </div>
-                      <p>info@mywastesolution.com</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
-                      </div>
-                      <p>9999241423</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-location-dot text-blue-400"></i>
-                      </div>
-                      <p>Greater Noida, Uttar Pradesh, India</p>
-                    </div>
-                    <button
-                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
-                    >
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="relative w-[24%]">
-                <div>
-                  <img src="./asset/image/buy4.png" alt="" />
-                </div>
-                <div
-                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
-                >
-                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
-                  <h2 class="font-bold py-3 text-md">Copper Scrap</h2>
-                  <div class="text-xs flex flex-col gap-3">
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i
-                          class="fa-solid fa-envelope text-xs text-blue-400"
-                        ></i>
-                      </div>
-                      <p>info@mywastesolution.com</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
-                      </div>
-                      <p>9999241423</p>
-                    </div>
-                    <div class="flex gap-3 items-center">
-                      <div
-                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
-                      >
-                        <i class="fa-solid fa-location-dot text-blue-400"></i>
-                      </div>
-                      <p>Abbeyleix, Leinster, Ireland</p>
-                    </div>
-                    <button
-                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
-                    >
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-3">
-              <div
-                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
-              >
-                <i class="fa-solid fa-chevron-left"></i>
-              </div>
-              <div
-                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
-              >
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
+            </section>
           </section>
+          <!-- end buyer listing -->
+
+          <!-- seller listing -->
           <section class="py-16 flex flex-col gap-10 items-center">
             <div class="flex flex-col justify-center items-center gap-5">
               <h2 class="text-xl font-bold">Seller Listings</h2>
@@ -704,7 +734,7 @@
                   <img src="./asset/image/selling1.png" alt="" />
                 </div>
                 <div
-                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                  class="absolute h-82 md:h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
                 >
                   <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
                   <h2 class="font-bold py-3 text-md">Laptop Edit</h2>
@@ -889,6 +919,9 @@
               </div>
             </div>
           </section>
+          <!-- end seller listing -->
+
+          <!-- Beyul Pvt Limited -->
           <section>
             <div class="flex flex-col justify-center items-center gap-5">
               <h2 class="text-xl font-bold">
@@ -899,7 +932,9 @@
                 Limited edit buys.
               </h4>
             </div>
-            <div class="grid grid-cols-6 justify-center items-center gap-3">
+            <div
+              class="grid grid-cols-6 justify-center items-center text-center gap-3"
+            >
               <div class="my-5 h-[10%] relative">
                 <div
                   class="h-16 w-16 bg-[#fafbfc] rounded-full flex justify-center items-center text-white absolute top-[-2em] left-[36%]"
@@ -1109,7 +1144,664 @@
               </div>
             </div>
           </section>
+          <!-- end Beyul Pvt Limited -->
+
+          <!-- Machine/Plant/Equipment's Listings -->
+          <section class="py-16 flex flex-col gap-10 items-center">
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h2 class="text-xl font-bold">
+                Machine/Plant/Equipment's Listings
+              </h2>
+              <h4 class="text-sm">
+                Listings of waste/buyproducts and recycled products Beyul Pvt
+                Limited edit buys.
+              </h4>
+            </div>
+            <div class="flex gap-3 justify-between mb-40">
+              <div class="relative w-[24%]">
+                <div>
+                  <img src="./asset/image/machine1.svg" alt="" />
+                </div>
+                <div
+                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                >
+                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                  <h2 class="font-bold py-3 text-md">
+                    Plastic Cutting Machine
+                  </h2>
+                  <div class="text-xs flex flex-col gap-3">
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-envelope text-xs text-blue-400"
+                        ></i>
+                      </div>
+                      <p>info@mywastesolution.com</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                      </div>
+                      <p>9999241423</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                      </div>
+                      <p>Central Delhi, Delhi, India</p>
+                    </div>
+                    <button
+                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-[24%]">
+                <div>
+                  <img src="./asset/image/injection.svg" alt="" />
+                </div>
+                <div
+                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                >
+                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                  <h2 class="font-bold py-3 text-md">Injection Moulding</h2>
+                  <div class="text-xs flex flex-col gap-3">
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-envelope text-xs text-blue-400"
+                        ></i>
+                      </div>
+                      <p>info@mywastesolution.com</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                      </div>
+                      <p>9999241423</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                      </div>
+                      <p>Central Delhi, Delhi, India</p>
+                    </div>
+                    <button
+                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-[24%]">
+                <div>
+                  <img src="./asset/image/magnetic.svg" alt="" />
+                </div>
+                <div
+                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                >
+                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                  <h2 class="font-bold py-3 text-md">Magnetic Separator</h2>
+                  <div class="text-xs flex flex-col gap-3">
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-envelope text-xs text-blue-400"
+                        ></i>
+                      </div>
+                      <p>info@mywastesolution.com</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                      </div>
+                      <p>9999241423</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                      </div>
+                      <p>Central Delhi, Delhi, India</p>
+                    </div>
+                    <button
+                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-[24%]">
+                <div>
+                  <img src="./asset/image/testTreatment.svg" alt="" />
+                </div>
+                <div
+                  class="absolute h-56 py-4 bg-white right-0 top-36 w-[90%] shadow shadow-[0_5px_20px_-10px_rgba(0,0,0,0.3)] pl-4 overflow-hidden"
+                >
+                  <hr class="bg-blue-400 w-[20%] h-2 top-[-2px] absolute" />
+                  <h2 class="font-bold py-3 text-md">
+                    Test Treatment plant edit
+                  </h2>
+                  <div class="text-xs flex flex-col gap-3">
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-envelope text-xs text-blue-400"
+                        ></i>
+                      </div>
+                      <p>info@mywastesolution.com</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-phone-volume text-blue-400"></i>
+                      </div>
+                      <p>9999241423</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                      <div
+                        class="flex justify-center items-center border-[1px] border-black-100 h-6 w-6 rounded-full"
+                      >
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                      </div>
+                      <p>Central Delhi, Delhi, India</p>
+                    </div>
+                    <button
+                      class="w-[50%] bg-gradient-to-r from-sky-400 to-indigo-600 text-white font-bold p-2 rounded-lg"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div
+                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div
+                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </section>
+          <!-- end Machine/Plant/Equipment's Listings -->
+
+          <!-- Beyul Pvt Limited edit Projects -->
+          <section
+            class="flex flex-col gap-10 py-5 justify-center items-center"
+          >
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h2 class="text-xl font-bold">Beyul Pvt Limited edit Projects</h2>
+              <h4 class="text-sm">
+                Listings of waste/buyproducts and recycled products Beyul Pvt
+                Limited edit buys.
+              </h4>
+            </div>
+            <div class="flex gap-5 justify-center">
+              <div class="relative w-4/12">
+                <img src="./asset/image/smallBusiness1.svg" alt="" />
+                <div class="absolute text-white bottom-5 left-5">
+                  <h4 class="text-xs font-bold">Recycling Solution</h4>
+                  <h2 class="font-bold">for small business</h2>
+                  <div class="flex gap-1 jutify-center items-center">
+                    <p class="text-xs text-yellow-300 font-bold">Learn More</p>
+                    <img src="./asset/image/Vector.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-4/12">
+                <img src="./asset/image/smallBusiness2.svg" alt="" />
+                <div class="absolute text-white bottom-5 left-5">
+                  <h4 class="text-xs font-bold">Recycling Solution</h4>
+                  <h2 class="font-bold">for small business</h2>
+                  <div class="flex gap-1 jutify-center items-center">
+                    <p class="text-xs text-yellow-300 font-bold">Learn More</p>
+                    <img src="./asset/image/Vector.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-4/12">
+                <img src="./asset/image/smallBusiness3.svg" alt="" />
+                <div class="absolute text-white bottom-5 left-5">
+                  <h4 class="text-xs font-bold">Recycling Solution</h4>
+                  <h2 class="font-bold">for small business</h2>
+                  <div class="flex gap-1 jutify-center items-center">
+                    <p class="text-xs text-yellow-300 font-bold">Learn More</p>
+                    <img src="./asset/image/Vector.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div
+                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div
+                class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </section>
+          <!-- End Beyul Pvt Limited edit Projects -->
+
+          <!-- Clientelle -->
+          <section
+            class="flex flex-col justify-center items-center gap-10 py-10"
+          >
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h2 class="text-xl font-bold">Clientelle</h2>
+              <h4 class="text-sm">
+                Listings of waste/buyproducts and recycled products Beyul Pvt
+                Limited edit buys.
+              </h4>
+            </div>
+            <div class="grid grid-cols-5">
+              <div
+                class="p-5 flex justify-center items-center border-2 border-black-100 hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-b-blue-400 hover:border-b-2"
+              >
+                <img src="./asset/image/goorej.svg" alt="goorej" />
+              </div>
+              <div
+                class="p-5 flex justify-center items-center border-2 border-black-100 hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-b-blue-400 hover:border-b-2"
+              >
+                <img src="./asset/image/bajaj.svg" alt="goorej" />
+              </div>
+              <div
+                class="p-5 flex justify-center items-center border-2 border-black-100 hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-b-blue-400 hover:border-b-2"
+              >
+                <img src="./asset/image/reliance.svg" alt="goorej" />
+              </div>
+              <div
+                class="p-5 flex justify-center items-center border-2 border-black-100 hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-b-blue-400 hover:border-b-2"
+              >
+                <img src="./asset/image/tata.svg" alt="goorej" />
+              </div>
+              <div
+                class="p-5 flex justify-center items-center border-2 border-black-100 hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-b-blue-400 hover:border-b-2"
+              >
+                <img src="./asset/image/goorej.svg" alt="goorej" />
+              </div>
+            </div>
+          </section>
+          <!-- End Clientelle -->
+
+          <!-- Testimonials -->
+          <section class="flex flex-col gap-10 py-10">
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h2 class="text-xl font-bold">Testimonials</h2>
+              <h4 class="text-sm">
+                Listings of waste/buyproducts and recycled products Beyul Pvt
+                Limited edit buys.
+              </h4>
+            </div>
+            <div class="flex gap-5">
+              <div
+                class="flex flex-col justify-center items-center gap-10 shadow shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] w-3/5"
+              >
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./asset/image/star.svg" alt="star" />
+                  <h3>Great Job And Fair Pricing</h3>
+                </div>
+                <div
+                  class="flex flex-col justify-center items-center text-center gap-5"
+                >
+                  <q>
+                    You guys rock! Convertio impressed me on multiple levels. I
+                    will let my mum know about this, she could really make use
+                    of Convertio! Since I invested in Convertio I made over
+                    100,000 dollars profits.
+                  </q>
+                  <img src="./asset/image/quote.svg" alt="" />
+                </div>
+              </div>
+              <div class="flex items-center gap-5 w-2/5">
+                <div class="flex flex-col gap-5 w-full">
+                  <div
+                    class="flex w-full gap-5 items-center p-2 border-2 border-black-100 cursor-pointer hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-l-blue-400 hover:border-l-2"
+                  >
+                    <div class="w-14 h-14 rounded-full">
+                      <img src="./asset/image/Man.svg" alt="user-image" />
+                    </div>
+                    <div>
+                      <p>Valentin Maier</p>
+                      <p>Elementor Expert</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full gap-5 items-center p-2 border-2 border-black-100 cursor-pointer hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-l-blue-400 hover:border-l-2"
+                  >
+                    <div class="w-14 h-14 rounded-full">
+                      <img src="./asset/image/Man.svg" alt="user-image" />
+                    </div>
+                    <div>
+                      <p>Valentin Maier</p>
+                      <p>Elementor Expert</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full gap-5 items-center p-2 border-2 border-black-100 cursor-pointer hover:shadow hover:shadow-[0_5px_30px_-5px_rgba(0,0,0,0.3)] hover:border-0 hover:bg-white cursor-pointer duration-100 hover:border-l-blue-400 hover:border-l-2"
+                  >
+                    <div class="w-14 h-14 rounded-full">
+                      <img src="./asset/image/Man.svg" alt="user-image" />
+                    </div>
+                    <div>
+                      <p>Valentin Maier</p>
+                      <p>Elementor Expert</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+                  >
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+                  <div
+                    class="w-10 h-10 border-[1px] border-black-100 flex justify-center items-center hover:bg-blue-400 cursor-pointer hover:text-white"
+                  >
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Testimonials -->
+
+          <!-- Beyul Pvt Limited edit Team -->
+          <section class="flex flex-col gap-5 py-10">
+            <div class="flex flex-col justify-center items-center gap-5">
+              <h2 class="text-xl font-bold">Beyul Pvt Limited edit Team</h2>
+              <h4 class="text-sm">
+                Listings of waste/buyproducts and recycled products Beyul Pvt
+                Limited edit buys.
+              </h4>
+            </div>
+            <div class="flex gap-3">
+              <div class="flex gap-5 pl-5 items-center">
+                <div class="text-xs">
+                  <p class="font-bold">Rachel Dsouza</p>
+                  <p>CEO</p>
+                  <div
+                    class="flex text-xs font-bold text-blue-500 items-center gap-1"
+                  >
+                    <p>Know More</p>
+                    <img
+                      src="./asset/image/chavronXs.svg"
+                      alt=""
+                      class="text-bluew-400"
+                    />
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    src="./asset/image/image 18.svg"
+                    alt="team-image"
+                    class="w-32"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 w-9 h-9 bg-white flex justify-center items-center"
+                  >
+                    <i data-feather="share-2"></i>
+                  </div>
+                  <div
+                    class="text-sm flex bg-blue-400 text-white p-1 h-9 items-center justify-center w-3/4 gap-3"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5 pl-5 items-center">
+                <div class="text-xs">
+                  <p class="font-bold">John Doe</p>
+                  <p>CEO</p>
+                  <div
+                    class="flex text-xs font-bold text-blue-500 items-center gap-1"
+                  >
+                    <p>Know More</p>
+                    <img
+                      src="./asset/image/chavronXs.svg"
+                      alt=""
+                      class="text-bluew-400"
+                    />
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    src="./asset/image/image 18(1).svg"
+                    alt="team-image"
+                    class="w-32"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 w-9 h-9 bg-white flex justify-center items-center"
+                  >
+                    <i data-feather="share-2"></i>
+                  </div>
+                  <div
+                    class="text-sm flex bg-blue-400 text-white p-1 h-9 items-center justify-center w-3/4 gap-3"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5 pl-5 items-center">
+                <div class="text-xs">
+                  <p class="font-bold">Ankita Sharma</p>
+                  <p>CEO</p>
+                  <div
+                    class="flex text-xs font-bold text-blue-500 items-center gap-1"
+                  >
+                    <p>Know More</p>
+                    <img
+                      src="./asset/image/chavronXs.svg"
+                      alt=""
+                      class="text-bluew-400"
+                    />
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    src="./asset/image/image 18(2).svg"
+                    alt="team-image"
+                    class="w-32"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 w-9 h-9 bg-white flex justify-center items-center"
+                  >
+                    <i data-feather="share-2"></i>
+                  </div>
+                  <div
+                    class="text-sm flex bg-blue-400 text-white p-1 h-9 items-center justify-center w-3/4 gap-3"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5 pl-5 items-center">
+                <div class="text-xs">
+                  <p class="font-bold">test staff edit</p>
+                  <p>CEO</p>
+                  <div
+                    class="flex text-xs font-bold text-blue-500 items-center gap-1"
+                  >
+                    <p>Know More</p>
+                    <img
+                      src="./asset/image/chavronXs.svg"
+                      alt=""
+                      class="text-bluew-400"
+                    />
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    src="./asset/image/image 18(3).svg"
+                    alt="team-image"
+                    class="w-32"
+                  />
+                  <div
+                    class="absolute bottom-0 right-0 w-9 h-9 bg-white flex justify-center items-center"
+                  >
+                    <i data-feather="share-2"></i>
+                  </div>
+                  <div
+                    class="text-sm flex bg-blue-400 text-white p-1 h-9 items-center justify-center w-3/4 gap-3"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Beyul Pvt Limited edit Team -->
+
+          <!-- Contact Beyul Pvt Limited edit -->
+          <section class="flex py-10">
+            <div class="w-3/5 flex flex-col gap-5">
+              <h1 class="text-lg font-bold">Contact Beyul Pvt Limited edit</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum dummy
+                available but the majority have suffered.
+              </p>
+              <div class="flex flex-col gap-5">
+                <div class="flex items-center gap-2">
+                  <div
+                    class="bg-gradient-to-r from-sky-400 to-indigo-600 text-white w-10 h-10 flex justify-center items-center rounded-md"
+                  >
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-bold">Have any Question?</p>
+                    <p>9999241423</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div
+                    class="bg-gradient-to-r from-sky-400 to-indigo-600 text-white w-10 h-10 flex justify-center items-center rounded-md"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-bold">Send Email</p>
+                    <p>info@mywastesolution.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div
+                    class="bg-gradient-to-r from-sky-400 to-indigo-600 text-white w-10 h-10 flex justify-center items-center rounded-md"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-bold">Visit Anytime</p>
+                    <p>
+                      B-402, Stellar Sigma Plot 7 edit 2, Sigma 4, Greater Noid
+                      edit 2, Central Delhi, Delhi, India,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-2/5 flex flex-col justify-center items-center gap-5 shadow shadow-[0_10px_25px_-10px_rgba(0,0,0,0.3)]"
+            >
+              <h3 class="font-bold">GET IN TOUCH</h3>
+              <form action="" class="flex flex-col gap-5 py-5">
+                <div
+                  class="border-2 border-black-100 h-10 flex justify-between items-center p-5 gap-2 rounded-lg"
+                >
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="focus:outline-none"
+                  />
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="border-2 border-black-100 h-10 flex justify-between items-center p-5 gap-2 rounded-lg"
+                >
+                  <label for="name">Phone No</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="focus:outline-none"
+                  />
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div
+                  class="border-2 border-black-100 h-10 flex justify-between items-center p-5 gap-2 rounded-lg"
+                >
+                  <label for="name">Email ID</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="focus:outline-none"
+                  />
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Message"
+                    class="p-5 rounded-lg focus:outline-none border-2 border-black-100"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-gradient-to-r from-sky-400 to-indigo-600 text-white h-12 w-full rounded-lg"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </section>
+          <!-- End Contact Beyul Pvt Limited edit -->
         </main>
+        <!--end Section main-->
       </aside>
     </div>
     <script>
